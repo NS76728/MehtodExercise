@@ -4,8 +4,24 @@ namespace MethodExercise
 {
     class Program
     {
+        public static void questions()
+        {
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+            Console.WriteLine("What is your favorite color?");
+            string color = Console.ReadLine();
+            Console.WriteLine("What is your favorite animal?");
+            string animal = Console.ReadLine();
+            Console.WriteLine("What is your favorite band?");
+            string band = Console.ReadLine();
 
-        public static int add(int num1, int num2)
+            Console.WriteLine($"Nice to meet you {name}. I see your favorite color is {color}, your favorite animal is {animal}, and your favorite band is {band}. ");
+
+        }
+
+
+
+        public static int add( int num1, int num2)
         {
             int total = num1 + num2;
             return total;
@@ -35,16 +51,9 @@ namespace MethodExercise
 
         static void Main(string[] args)
         {
-            Console.WriteLine("What is your name?");
-            string name = Console.ReadLine();
-            Console.WriteLine("What is your favorite color?");
-            string color = Console.ReadLine();
-            Console.WriteLine("What is your favorite animal?");
-            string animal = Console.ReadLine();
-            Console.WriteLine("What is your favorite band?");
-            string band = Console.ReadLine();
 
-            Console.WriteLine($"Nice to meet you {name}. I see your favorite color is {color}, your favorite animal is {animal}, and your favorite band is {band}. ");
+            questions();
+
 
             Console.WriteLine("Calculator time!");
 
